@@ -38,7 +38,7 @@ The Movie Recommendation System leverages the relationships between users, movie
    ```bash
    git clone https://github.com/yourusername/movie-recommendation-system.git
    cd movie-recommendation-system
-Install Dependencies:
+## Install Dependencies:
 
 bash
 Copy code
@@ -48,7 +48,7 @@ Set Up Neo4j Database:
 Ensure Neo4j is installed and running.
 Create a new database or use an existing one.
 Import your dataset, ensuring it includes User, Movie, and Genre nodes with the appropriate relationships.
-Usage
+## Usage
 Configure Environment Variables:
 
 Create a .env file in the root directory and add the following variables:
@@ -60,7 +60,7 @@ NEO4J_USER=neo4j
 NEO4J_PASSWORD=your_password
 Replace your_password with your Neo4j password.
 
-Run the Application:
+## Run the Application:
 
 bash
 Copy code
@@ -69,10 +69,10 @@ Get Recommendations:
 
 Use the provided API endpoints or functions to fetch movie recommendations for a specific user.
 
-Configuration
+## Configuration
 Neo4j Connection: Update the .env file with your Neo4j connection details.
 Recommendation Parameters: Modify the recommendation logic in app.js to adjust thresholds, limits, and other parameters as needed.
-Data Model
+## Data Model
 The system uses the following data model:
 
 Nodes:
@@ -87,11 +87,11 @@ Relationships:
 Recommendation Logic
 The application implements a hybrid recommendation approach:
 
-Collaborative Filtering:
+## Collaborative Filtering:
 
 Identifies users with similar movie-watching patterns.
 Recommends movies that similar users have highly rated but the target user hasn't watched.
-Content-Based Filtering (Fallback):
+## Content-Based Filtering (Fallback):
 
 If collaborative filtering doesn't yield sufficient recommendations, suggests movies of genres that the user has shown interest in.
 Contributing
